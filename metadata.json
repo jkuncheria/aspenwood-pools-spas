@@ -1,0 +1,7 @@
+{
+  "name": "Aspenwood Pools & Spas",
+  "description": "Professional construction services in Phoenix, Arizona. Expert builders delivering quality craftsmanship, on-time delivery, and transparent pricing. Residential and commercial construction, remodeling, new construction, tenant improvements, flooring, stucco, concrete, and more. Licensed, insured, and committed to quality.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

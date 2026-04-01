@@ -1,0 +1,54 @@
+{
+  "redirects": [
+    { "source": "/contact-us", "destination": "/contact", "permanent": true },
+    { "source": "/contact-us/", "destination": "/contact", "permanent": true },
+    { "source": "/category/uncategorized", "destination": "/", "permanent": true },
+    { "source": "/category/uncategorized/", "destination": "/", "permanent": true },
+    { "source": "/hello-world", "destination": "/", "permanent": true },
+    { "source": "/hello-world/", "destination": "/", "permanent": true },
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/home/", "destination": "/", "permanent": true },
+    { "source": "/projects", "destination": "/gallery", "permanent": true },
+    { "source": "/projects/", "destination": "/gallery", "permanent": true },
+    { "source": "/testimonials", "destination": "/#testimonials", "permanent": true },
+    { "source": "/testimonials/", "destination": "/#testimonials", "permanent": true },
+    { "source": "/promotions", "destination": "/contact", "permanent": true },
+    { "source": "/promotions/", "destination": "/contact", "permanent": true },
+        { "source": "/before-after", "destination": "/gallery", "permanent": true },
+    { "source": "/before-after/", "destination": "/gallery", "permanent": true },
+    { "source": "/interior-car-detail", "destination": "/auto-detailing", "permanent": true },
+    { "source": "/interior-car-detail/", "destination": "/auto-detailing", "permanent": true },
+    { "source": "/who-we-are", "destination": "/about", "permanent": true },
+    { "source": "/who-we-are/", "destination": "/about", "permanent": true }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+}
+
