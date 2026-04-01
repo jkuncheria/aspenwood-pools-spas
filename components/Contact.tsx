@@ -103,7 +103,7 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
       const submissionData: Record<string, any> = {
         name: formData.name,
         email: formData.email,
-        clientId: 'RL-WAWTG568',
+        clientId: 'RL-WFN2FS5L',
         projectType: projectTypeMap[formData.inquiryType] || formData.inquiryType,
         inquiryType: formData.inquiryType,
       };

@@ -25,5 +25,4 @@ dist-ssr
 .vercel
 
 # Large image folders (store separately or use Git LFS)
-public/Google-Drive-Shared/
 public/xpel_files/
