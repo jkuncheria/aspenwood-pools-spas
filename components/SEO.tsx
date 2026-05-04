@@ -88,7 +88,7 @@ const SEO: React.FC<SEOProps> = ({
 
     updateOGTag('og:title', title);
     updateOGTag('og:description', description);
-    updateOGTag('og:image', `https://splashmobiledetail.com${ogImage}`);
+    updateOGTag('og:image', `https://aspenwoodpools.com${ogImage}`);
     if (canonical) {
       updateOGTag('og:url', canonical);
     }
@@ -108,7 +108,7 @@ const SEO: React.FC<SEOProps> = ({
 
     updateTwitterTag('twitter:title', title);
     updateTwitterTag('twitter:description', description);
-    updateTwitterTag('twitter:image', `https://splashmobiledetail.com${ogImage}`);
+    updateTwitterTag('twitter:image', `https://aspenwoodpools.com${ogImage}`);
 
     // Add Service Schema if provided
     if (serviceSchema) {
@@ -126,11 +126,11 @@ const SEO: React.FC<SEOProps> = ({
         "name": serviceSchema.name,
         "description": serviceSchema.description,
         "url": serviceSchema.url,
-        "image": serviceSchema.image || `https://splashmobiledetail.com${ogImage}`,
+        "image": serviceSchema.image || `https://aspenwoodpools.com${ogImage}`,
         "provider": {
           "@type": "LocalBusiness",
           "name": "Aspenwood Pools & Spas",
-          "telephone": "970-618-6183",
+          "telephone": "(833) 573-POOL",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "18233 Lincoln Meadows Pkwy, Unit 108",

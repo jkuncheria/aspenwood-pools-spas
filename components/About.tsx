@@ -49,7 +49,7 @@ const About: React.FC = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="tel:3035557665" 
+                  href="tel:18335737665" 
                   className="inline-flex items-center justify-center gap-2 text-white font-semibold py-3.5 px-7 rounded-full transition-all duration-300 hover:-translate-y-0.5 shadow-md"
                   style={{ background: 'linear-gradient(135deg, #0D5C6D 0%, #094854 100%)' }}
                 >
@@ -90,12 +90,12 @@ const About: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:3035557665" 
+                href="tel:18335737665" 
                 className="inline-flex items-center justify-center gap-2 font-semibold py-3.5 px-7 rounded-full transition-all duration-300 hover:-translate-y-0.5 shadow-lg"
                 style={{ background: 'linear-gradient(135deg, #D4A853 0%, #B8923F 100%)', color: '#0F172A' }}
               >
                 <Phone className="w-5 h-5" />
-                Call Now: (303) 555-POOL
+                Call Now: (833) 573-POOL
               </a>
               <Link 
                 to="/contact"

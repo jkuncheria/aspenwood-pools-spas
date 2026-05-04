@@ -167,7 +167,7 @@ const OurStory: React.FC = () => {
                 </div>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
-                    Today, Aspenwood Pools & Spas is a <span className="font-bold text-gray-900">full-service pool and spa company</span> offering everything from custom installations to weekly maintenance.
+                    Today, Aspenwood Pools & Spas is a <span className="font-bold text-gray-900">full-service pool and spa company</span> offering everything from custom installations to stunning outdoor living spaces.
                   </p>
                   <p>
                     We've built lasting relationships with our customers, many of whom have been with us since the beginning – <span className="italic">and that's exactly how we like it</span>.

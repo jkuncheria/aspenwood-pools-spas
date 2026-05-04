@@ -26,18 +26,18 @@ const Hero: React.FC = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8">
             <span className="w-2 h-2 bg-[#D4A853] rounded-full animate-pulse"></span>
-            <span className="text-sm text-white/90 font-medium">Serving Parker & Douglas County</span>
+            <span className="text-sm text-white/90 font-medium">Serving Douglas County, Castle Rock & Surrounding Areas</span>
           </div>
           
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            PARKER'S PREMIER
+            DENVER METRO'S PREMIER
             <span className="block text-[#D4A853]">POOL COMPANY</span>
           </h1>
           
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed max-w-xl">
-            Custom pools, relaxing spas, and expert maintenance services. We bring your dream outdoor oasis to life with quality craftsmanship you can trust.
+            Custom pools, relaxing spas, and stunning outdoor living spaces. We bring your dream backyard oasis to life with quality craftsmanship you can trust.
           </p>
           
           {/* CTA Buttons */}
@@ -51,32 +51,30 @@ const Hero: React.FC = () => {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <a 
-              href="tel:3035557665"
+              href="tel:18335737665"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/20 hover:bg-white/20 transition-all duration-300"
             >
               <Phone className="w-5 h-5" />
-              (303) 555-POOL
+              (833) 573-POOL
             </a>
           </div>
           
           {/* Trust Indicators */}
-          <div className="flex flex-wrap items-center gap-8 text-white/70">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 text-white/70">
             <div className="flex items-center gap-2">
               <div className="flex -space-x-1">
                 {[1,2,3,4,5].map((i) => (
-                  <div key={i} className="w-6 h-6 rounded-full bg-[#D4A853] flex items-center justify-center text-xs text-[#0F172A] font-bold border-2 border-[#0F172A]">
+                  <div key={i} className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#D4A853] flex items-center justify-center text-xs text-[#0F172A] font-bold border-2 border-[#0F172A]">
                     ★
                   </div>
                 ))}
               </div>
               <span className="text-sm">5-Star Reviews</span>
             </div>
-            <div className="h-4 w-px bg-white/20 hidden sm:block"></div>
-            <div className="text-sm">
+            <div className="flex items-center gap-2 text-sm">
               <span className="text-white font-semibold">500+</span> Pools Serviced
             </div>
-            <div className="h-4 w-px bg-white/20 hidden sm:block"></div>
-            <div className="text-sm">
+            <div className="flex items-center gap-2 text-sm">
               <span className="text-white font-semibold">Licensed</span> & Insured
             </div>
           </div>

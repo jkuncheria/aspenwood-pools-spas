@@ -82,7 +82,7 @@ const PrivacyPolicy: React.FC = () => {
             <p className="mb-4"><strong>Message Frequency:</strong> Message frequency varies based on your interactions with us and your preferences.</p>
             <p className="mb-4"><strong>Message and Data Rates:</strong> Standard message and data rates may apply depending on your mobile carrier and plan.</p>
             <p className="mb-4"><strong>Opt-Out:</strong> You may opt out of receiving text messages at any time by replying STOP to any message. After opting out, you will receive a confirmation message and will no longer receive text messages from us unless you opt in again.</p>
-            <p className="mb-4"><strong>Help:</strong> For help, reply HELP to any message or contact us at (303) 555-POOL or info@aspenwoodpools.com.</p>
+            <p className="mb-4"><strong>Help:</strong> For help, reply HELP to any message or contact us at (833) 573-POOL or info@aspenwoodpools.com.</p>
             <p>We will not share your phone number with third parties for their marketing purposes without your explicit consent.</p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">4. Information Sharing and Disclosure</h2>
@@ -125,7 +125,7 @@ const PrivacyPolicy: React.FC = () => {
               <p className="font-bold text-gray-900 mb-2">Aspenwood Pools & Spas</p>
               <p>Parker, CO 80134</p>
               <p className="mt-2">
-                <strong>Phone:</strong> <a href="tel:3035557665" className="text-[#0D5C6D] hover:underline">(303) 555-POOL</a>
+                <strong>Phone:</strong> <a href="tel:18335737665" className="text-[#0D5C6D] hover:underline">(833) 573-POOL</a>
               </p>
               <p>
                 <strong>Email:</strong> <a href="mailto:info@aspenwoodpools.com" className="text-[#0D5C6D] hover:underline">info@aspenwoodpools.com</a>

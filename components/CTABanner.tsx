@@ -27,11 +27,11 @@ const CTABanner: React.FC = () => {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
           <a 
-            href="tel:3035557665"
+            href="tel:18335737665"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full transition-all duration-300 border border-white/20"
           >
             <Phone className="w-5 h-5" />
-            (303) 555-POOL
+            (833) 573-POOL
           </a>
         </div>
       </div>

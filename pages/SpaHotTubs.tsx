@@ -29,12 +29,10 @@ const SpaHotTubs: React.FC = () => {
   ];
 
   const spaTypes = [
-    'Portable hot tubs',
     'In-ground spas',
     'Swim spas',
     'Therapy spas',
     'Luxury spas',
-    'Compact 2-person spas',
     'Family-size spas (6-8 person)',
     'Custom built-in spas'
   ];
@@ -73,7 +71,7 @@ const SpaHotTubs: React.FC = () => {
     <>
       <SEO
         title="Spa & Hot Tub Installation Parker CO | Hot Tub Sales & Service | Aspenwood Pools & Spas"
-        description="Hot tub and spa installation, sales, and service in Parker, Colorado. Portable hot tubs, in-ground spas, swim spas. Expert repair and maintenance. Serving Douglas County."
+        description="Hot tub and spa installation, sales, and service in Parker, Colorado. In-ground spas, swim spas, therapy spas. Expert repair and maintenance. Serving Douglas County."
         keywords="hot tub installation Parker CO, spa sales Colorado, swim spa Denver, hot tub repair Douglas County, spa service Castle Rock"
         canonical="https://aspenwoodpools.com/spa-hot-tubs"
         serviceSchema={{
@@ -108,7 +106,7 @@ const SpaHotTubs: React.FC = () => {
                   Get Free Quote
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <a href="tel:3035557665" className="inline-flex items-center justify-center gap-2 border-2 border-[#0D5C6D] text-[#0D5C6D] font-semibold py-3.5 px-7 rounded-full hover:bg-[#0D5C6D] hover:text-white transition-all duration-300">
+                <a href="tel:18335737665" className="inline-flex items-center justify-center gap-2 border-2 border-[#0D5C6D] text-[#0D5C6D] font-semibold py-3.5 px-7 rounded-full hover:bg-[#0D5C6D] hover:text-white transition-all duration-300">
                   <Phone className="w-5 h-5" />
                   Call Us
                 </a>
@@ -209,7 +207,7 @@ const SpaHotTubs: React.FC = () => {
                 Get Free Quote
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <a href="tel:3035557665" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold py-3.5 px-7 rounded-full transition-all duration-300 border border-white/20">
+              <a href="tel:18335737665" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold py-3.5 px-7 rounded-full transition-all duration-300 border border-white/20">
                 <Phone className="w-5 h-5" />
                 Call Us
               </a>

@@ -77,7 +77,7 @@ const TermsOfService: React.FC = () => {
               <li>Message frequency varies based on your interactions and preferences.</li>
               <li>Message and data rates may apply depending on your mobile carrier and plan.</li>
               <li>You may opt out at any time by replying STOP to any message.</li>
-              <li>For help, reply HELP or contact us at (303) 555-POOL.</li>
+              <li>For help, reply HELP or contact us at (833) 573-POOL.</li>
               <li>Carriers are not liable for delayed or undelivered messages.</li>
             </ul>
 
@@ -115,7 +115,7 @@ const TermsOfService: React.FC = () => {
               <p className="font-bold text-gray-900 mb-2">Aspenwood Pools & Spas</p>
               <p>Parker, CO 80134</p>
               <p className="mt-2">
-                <strong>Phone:</strong> <a href="tel:3035557665" className="text-[#0D5C6D] hover:underline">(303) 555-POOL</a>
+                <strong>Phone:</strong> <a href="tel:18335737665" className="text-[#0D5C6D] hover:underline">(833) 573-POOL</a>
               </p>
               <p>
                 <strong>Email:</strong> <a href="mailto:info@aspenwoodpools.com" className="text-[#0D5C6D] hover:underline">info@aspenwoodpools.com</a>

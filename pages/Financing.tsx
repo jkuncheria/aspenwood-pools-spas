@@ -277,11 +277,11 @@ const Financing: React.FC = () => {
                 Check Your Rate Now
               </a>
               <a 
-                href="tel:3035557665" 
+                href="tel:18335737665" 
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold py-3.5 px-7 rounded-full transition-all duration-300 border border-white/20"
               >
                 <Phone className="w-5 h-5" />
-                Call: (303) 555-POOL
+                Call: (833) 573-POOL
               </a>
             </div>
           </div>

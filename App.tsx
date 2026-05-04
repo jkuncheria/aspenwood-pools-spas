@@ -17,6 +17,7 @@ import PoolRenovation from './pages/PoolRenovation';
 import PoolOpeningClosing from './pages/PoolOpeningClosing';
 import AutoCoverInstallation from './pages/AutoCoverInstallation';
 import Financing from './pages/Financing';
+import PoolPriceEstimator from './pages/PoolPriceEstimator';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 
@@ -43,6 +44,7 @@ const App: React.FC = () => {
             <Route path="/pool-opening-closing" element={<PoolOpeningClosing />} />
             <Route path="/auto-cover-installation" element={<AutoCoverInstallation />} />
             <Route path="/financing" element={<Financing />} />
+            <Route path="/pool-price-estimator" element={<PoolPriceEstimator />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
           </Routes>

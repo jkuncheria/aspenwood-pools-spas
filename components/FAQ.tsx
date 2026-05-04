@@ -11,7 +11,7 @@ const FAQ: React.FC = () => {
       questions: [
         {
           question: 'How quickly will you respond to my inquiry?',
-          answer: 'We typically respond to all inquiries within 24 hours. For urgent matters or immediate assistance, please call us directly at (303) 555-POOL. Our team is available to help with all your pool and spa needs.'
+          answer: 'We typically respond to all inquiries within 24 hours. For urgent matters or immediate assistance, please call us directly at (833) 573-POOL. Our team is available to help with all your pool and spa needs.'
         },
         {
           question: 'Do you offer free estimates?',
@@ -49,23 +49,23 @@ const FAQ: React.FC = () => {
       ]
     },
     {
-      category: 'Pool Maintenance',
+      category: 'Pool Care Tips',
       questions: [
         {
-          question: 'How often should my pool be serviced?',
-          answer: 'We recommend weekly service during swim season to maintain proper water chemistry and cleanliness. This includes skimming, vacuuming, brushing, chemical balancing, and equipment checks. Off-season service frequency depends on whether your pool is covered.'
+          question: 'How often should a pool be serviced?',
+          answer: 'Pools typically need weekly service during swim season to maintain proper water chemistry and cleanliness. This includes skimming, vacuuming, brushing, chemical balancing, and equipment checks. Off-season service frequency depends on whether your pool is covered.'
         },
         {
-          question: 'What\'s included in weekly maintenance?',
-          answer: 'Our weekly service includes skimming debris, vacuuming the pool floor, brushing walls and tile, emptying skimmer and pump baskets, testing and balancing water chemistry, inspecting equipment, and providing a service report.'
+          question: 'What does regular pool care involve?',
+          answer: 'Regular pool care includes skimming debris, vacuuming the pool floor, brushing walls and tile, emptying skimmer and pump baskets, testing and balancing water chemistry, and inspecting equipment.'
         },
         {
-          question: 'Do you provide the chemicals?',
-          answer: 'Yes, chemicals are included in our maintenance plans. We use professional-grade products and adjust chemical levels as needed to keep your water safe, clear, and balanced.'
+          question: 'Do you offer pool opening and closing services?',
+          answer: 'Yes! We provide professional pool opening and closing services to prepare your pool for the swim season and winterize it properly when the season ends.'
         },
         {
-          question: 'Can I do my own maintenance?',
-          answer: 'Of course! We\'re happy to teach you proper pool care techniques. We also offer water testing services and can provide chemicals and supplies if you prefer to maintain your pool yourself.'
+          question: 'Can you help with pool equipment issues?',
+          answer: 'Absolutely! We repair and replace pumps, filters, heaters, salt systems, automation controls, lights, and more. If something\'s wrong with your pool equipment, we can diagnose and fix it.'
         }
       ]
     },
@@ -94,8 +94,8 @@ const FAQ: React.FC = () => {
       category: 'Hot Tubs & Spas',
       questions: [
         {
-          question: 'Do you sell hot tubs?',
-          answer: 'Yes! We carry a selection of quality hot tubs and can help you choose the right size and features for your needs. We handle delivery, installation, and ongoing service.'
+          question: 'Do you install hot tubs and spas?',
+          answer: 'Yes! We specialize in hot tub and spa installation. We can help you choose the right size and features for your needs, prepare the site, and handle professional installation.'
         },
         {
           question: 'How often should a hot tub be drained?',
@@ -216,10 +216,10 @@ const FAQ: React.FC = () => {
                 Contact Us
               </Link>
               <a 
-                href="tel:3035557665"
+                href="tel:18335737665"
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold py-3.5 px-7 rounded-full transition-all duration-300 border border-white/20"
               >
-                Call (303) 555-POOL
+                Call (833) 573-POOL
               </a>
             </div>
           </div>

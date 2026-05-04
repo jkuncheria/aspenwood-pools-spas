@@ -5,6 +5,7 @@ import { Shield, Sparkles, Clock, Award, Droplets, Wrench, ThermometerSun, Waves
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Pool Installation', href: '/pool-installation' },
   { label: 'Spa & Hot Tubs', href: '/spa-hot-tubs' },
+  { label: 'Price Estimator', href: '/pool-price-estimator' },
   { 
     label: 'All Services', 
     href: '#',

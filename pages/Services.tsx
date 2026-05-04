@@ -131,7 +131,7 @@ const Services: React.FC = () => {
           </h1>
           <div className="w-16 h-1 bg-gradient-to-r from-[#D4A853] to-[#E4BC6A] mx-auto rounded-full mb-6"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            From custom pool installation to weekly maintenance, we provide complete pool and spa services for Parker, Castle Rock, and the Denver metro area.
+            From custom pool installations to stunning outdoor living spaces, we provide complete pool and spa services for Parker, Castle Rock, and the Denver metro area.
           </p>
         </div>
 
@@ -234,7 +234,7 @@ const Services: React.FC = () => {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <a 
-                href="tel:3035557665" 
+                href="tel:18335737665" 
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold py-3.5 px-7 rounded-full transition-all duration-300 border border-white/20"
               >
                 <Phone className="w-5 h-5" />

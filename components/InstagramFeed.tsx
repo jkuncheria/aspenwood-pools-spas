@@ -8,7 +8,7 @@ const InstagramFeed: React.FC = () => {
         <div className="text-center mb-12">
           <span className="text-[#D4A853] font-semibold text-sm uppercase tracking-wider">Follow Us</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mt-3 mb-4">
-            @AspenwoodPools on Instagram
+            @AspenwoodLandscape on Instagram
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#D4A853] to-[#E4BC6A] mx-auto rounded-full mb-6"></div>
         </div>

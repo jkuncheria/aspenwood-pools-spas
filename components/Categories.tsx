@@ -52,7 +52,7 @@ const Categories: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mt-3 mb-4">Our Services</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#D4A853] to-[#E4BC6A] mx-auto rounded-full"></div>
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
-            From custom pool installations to weekly maintenance, we provide comprehensive pool and spa services tailored to your needs.
+            From custom pool installations to stunning outdoor living spaces, we provide comprehensive pool and spa services tailored to your needs.
           </p>
         </div>
 

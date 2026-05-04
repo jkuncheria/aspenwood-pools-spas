@@ -27,9 +27,9 @@ const Footer: React.FC = () => {
                 Premier pool and spa services in Parker, Colorado. Creating backyard paradises since day one.
               </p>
               <div className="space-y-3">
-                <a href="tel:3035557665" className="flex items-center gap-3 text-gray-300 hover:text-[#D4A853] transition-colors">
+                <a href="tel:18335737665" className="flex items-center gap-3 text-gray-300 hover:text-[#D4A853] transition-colors">
                   <Phone className="w-4 h-4 text-[#D4A853]" />
-                  <span>(303) 555-POOL</span>
+                  <span>(833) 573-POOL</span>
                 </a>
                 <a href="mailto:info@aspenwoodpools.com" className="flex items-center gap-3 text-gray-300 hover:text-[#D4A853] transition-colors">
                   <Mail className="w-4 h-4 text-[#D4A853]" />
@@ -116,42 +116,18 @@ const Footer: React.FC = () => {
               </ul>
             </div>
 
-            {/* Hours & Social */}
+            {/* Social */}
             <div>
-              <h4 className="text-[#D4A853] font-semibold mb-6 uppercase text-sm tracking-wider">Business Hours</h4>
-              <div className="space-y-2 text-gray-400 mb-8">
-                <div className="flex justify-between">
-                  <span>Mon - Fri</span>
-                  <span className="text-white">8 AM – 5 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span className="text-white">9 AM – 3 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span className="text-gray-500">Closed</span>
-                </div>
-              </div>
-              
               <h4 className="text-[#D4A853] font-semibold mb-4 uppercase text-sm tracking-wider">Follow Us</h4>
               <div className="flex gap-3">
                 <a 
-                  href="https://www.facebook.com/aspenwoodpools" 
+                  href="https://www.instagram.com/aspenwoodlandscape" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#D4A853] flex items-center justify-center transition-all duration-300"
                 >
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a 
-                  href="https://www.yelp.com/biz/aspenwood-pools-spas-parker" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#D4A853] flex items-center justify-center transition-all duration-300"
-                >
-                  <svg className="w-5 h-5" viewBox="0 0 384 512" fill="currentColor">
-                    <path d="M42.9 240.32l99.62 48.61c19.2 9.4 16.2 37.51-4.5 42.71L30.5 358.45a22.79 22.79 0 0 1-28.21-19.6 197.16 197.16 0 0 1 9-85.32 22.8 22.8 0 0 1 31.61-13.21zm44 239.25a199.45 199.45 0 0 0 79.42 32.11A22.78 22.78 0 0 0 192.94 490l3.9-110.82c.7-21.3-25.5-31.91-39.81-16.1l-74.21 82.4a22.82 22.82 0 0 0 4.09 34.09zm145.34-109.92l58.81 94a22.93 22.93 0 0 0 34 5.5 198.36 198.36 0 0 0 52.71-67.61A22.8 22.8 0 0 0 368.1 369l-105.42-26.31c-20.61-5.1-38.21 20.2-25.44 37.96zm148.33-132.23a197.44 197.44 0 0 0-50.41-69.31 22.77 22.77 0 0 0-34 4.4l-62 91.92c-11.9 17.7 4.7 40.61 25.2 34.71L366 268.63a22.82 22.82 0 0 0 14.61-31.21zM62.11 30.18a22.86 22.86 0 0 0-9.9 32l104.12 180.44c11.7 20.2 42.61 11.9 42.61-11.4V22.88a22.67 22.67 0 0 0-24.5-22.8 320.37 320.37 0 0 0-112.33 30.1z"/>
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                 </a>
               </div>

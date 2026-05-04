@@ -188,12 +188,12 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
               </p>
 
               <div className="space-y-4">
-                <a href="tel:3035557665" className="group flex items-center gap-4 p-4 rounded-xl hover:bg-[#0D5C6D]/5 transition-all duration-300">
+                <a href="tel:18335737665" className="group flex items-center gap-4 p-4 rounded-xl hover:bg-[#0D5C6D]/5 transition-all duration-300">
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#0D5C6D] to-[#094854] group-hover:scale-105 transition-transform">
                     <Phone className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#0F172A]">(303) 555-POOL</p>
+                    <p className="font-semibold text-[#0F172A]">(833) 573-POOL</p>
                     <p className="text-sm text-gray-500">Call for Free Consultation</p>
                   </div>
                 </a>

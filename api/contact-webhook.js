@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     return res.status(200).end();
   }
 
-  const GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/Z5wxGFTwXwvKwcjoFyON/webhook-trigger/54afbec0-ccfc-4b48-99a2-2857e35b59f4';
+  const GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/QtzgRD5riIOQRaRr5Knh/webhook-trigger/igC9H6ISNhHDyb45MePu';
 
   try {
     const { name, email, phone, inquiryType, message, smsOptIn } = req.body;

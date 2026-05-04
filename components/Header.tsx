@@ -52,9 +52,9 @@ const Header: React.FC = () => {
       {/* Top Bar - Premium Style */}
       <div className="bg-[#0F172A] text-xs py-2.5 px-4 hidden md:flex justify-between items-center">
         <div className="flex items-center gap-6 text-gray-300">
-          <a href="tel:3035557665" className="flex items-center gap-2 hover:text-[#D4A853] transition-colors">
+          <a href="tel:18335737665" className="flex items-center gap-2 hover:text-[#D4A853] transition-colors">
             <Phone className="w-3.5 h-3.5" />
-            <span>(303) 555-POOL</span>
+            <span>(833) 573-POOL</span>
           </a>
           <a href="mailto:info@aspenwoodpools.com" className="flex items-center gap-2 hover:text-[#D4A853] transition-colors">
             <Mail className="w-3.5 h-3.5" />
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
           {/* Mobile Contact Buttons (Left side on mobile) */}
           <div className="flex items-center gap-2 md:hidden">
             <a 
-              href="tel:3035557665"
+              href="tel:18335737665"
               className="p-2.5 text-white rounded-full transition-all shadow-md"
               style={{ background: 'linear-gradient(135deg, #0D5C6D 0%, #094854 100%)' }}
             >
@@ -162,7 +162,7 @@ const Header: React.FC = () => {
               Get Quote
             </Link>
             <a 
-              href="tel:3035557665"
+              href="tel:18335737665"
               className="flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
               style={{ background: 'linear-gradient(135deg, #0D5C6D 0%, #094854 100%)' }}
             >
@@ -242,10 +242,10 @@ const Header: React.FC = () => {
               Get Free Quote
             </Link>
             <a 
-              href="tel:3035557665"
+              href="tel:18335737665"
               className="block w-full text-center px-5 py-3 text-sm font-semibold text-[#0D5C6D] border-2 border-[#0D5C6D] rounded-full"
             >
-              Call (303) 555-POOL
+              Call (833) 573-POOL
             </a>
           </div>
         </div>
