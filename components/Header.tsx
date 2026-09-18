@@ -8,6 +8,9 @@ const Header: React.FC = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const dropdownRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+  // dropdownRefs only holds the desktop dropdowns, so without its own ref every
+  // tap inside the mobile panel counts as a click outside.
+  const mobileMenuRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -25,6 +28,10 @@ const Header: React.FC = () => {
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
+      // Fires on mousedown. Without this, a tap on a mobile submenu link closed the
+      // dropdown and unmounted the link before mouseup, so no click event was ever
+      // dispatched and the tap did nothing.
+      if (mobileMenuRef.current?.contains(event.target as Node)) return;
       const refs = Object.values(dropdownRefs.current) as (HTMLDivElement | null)[];
       const clickedOutside = refs.every(
         (ref: HTMLDivElement | null) => {
@@ -184,7 +191,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className={`lg:hidden bg-white border-t border-gray-100 overflow-hidden transition-all duration-300 ${isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div ref={mobileMenuRef} className={`lg:hidden bg-white border-t border-gray-100 overflow-hidden transition-all duration-300 ${isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className="px-4 py-4 space-y-1">
           {NAV_ITEMS.map((item) => (
             <div key={item.label}>
