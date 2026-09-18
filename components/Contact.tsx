@@ -78,27 +78,6 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
         'other': 'Other'
       };
 
-      // Send to GoHighLevel via server-side API route (avoids CORS issues)
-      try {
-        await fetch('/api/contact-webhook', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone || '',
-            inquiryType: projectTypeMap[formData.inquiryType] || formData.inquiryType,
-            message: formData.message || '',
-            smsOptIn: formData.smsOptIn,
-          }),
-        });
-      } catch (ghlError) {
-        // Log but don't fail - continue with other submission
-        console.error('Error sending to GHL:', ghlError);
-      }
-
       // Prepare submission data for RenoLens
       const submissionData: Record<string, any> = {
         name: formData.name,
@@ -116,18 +95,63 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
         submissionData.message = formData.message;
       }
 
-      // Submit to RenoLens API
-      const response = await fetch('https://www.renolens.com/api/contact-form', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(submissionData),
-      });
+      // Submit to RenoLens API first so we know the spam verdict before
+      // deciding whether to forward to the CRM.
+      //
+      // If RenoLens is unreachable we fail OPEN: `filtered` stays false and the
+      // submission still goes to GoHighLevel. An occasional spam text is a far
+      // better failure than a lost job.
+      let result: { filtered?: boolean } = {};
+      let renoLensOk = true;
+      try {
+        const response = await fetch('https://www.renolens.com/api/contact-form', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(submissionData),
+        });
 
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.message || `Server error: ${response.status}`);
+        if (!response.ok) {
+          throw new Error(`Server error: ${response.status}`);
+        }
+
+        result = await response.json().catch(() => ({}));
+      } catch (renoLensError) {
+        renoLensOk = false;
+        console.error('RenoLens submission failed, forwarding to CRM anyway:', renoLensError);
+      }
+
+      // Only forward to GoHighLevel if RenoLens didn't score this as spam.
+      // GHL texts the owner on every submission, so calling it unconditionally
+      // means junk still reaches their phone even when the email is blocked.
+      let ghlOk = false;
+      if (!result.filtered) {
+        try {
+          await fetch('/api/contact-webhook', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone || '',
+            inquiryType: projectTypeMap[formData.inquiryType] || formData.inquiryType,
+            message: formData.message || '',
+            smsOptIn: formData.smsOptIn,
+          }),
+          });
+          ghlOk = true;
+        } catch (ghlError) {
+          // Log but don't fail - the lead is already recorded with RenoLens.
+          console.error('Error sending to GHL:', ghlError);
+        }
+      }
+
+      // Only tell the customer something went wrong if nothing received it.
+      if (!renoLensOk && !ghlOk) {
+        throw new Error('Submission failed');
       }
 
       // Success
