@@ -191,7 +191,20 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div ref={mobileMenuRef} className={`lg:hidden bg-white border-t border-gray-100 overflow-hidden transition-all duration-300 ${isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+      {/* A fixed max-height with overflow-hidden clipped the menu: with a
+          submenu expanded the content is taller than the cap, so the lower
+          links were unreachable with no way to scroll. 80vh plus overflowY
+          auto lets the panel scroll, matching the RenoLens template. */}
+      <div
+        ref={mobileMenuRef}
+        className="lg:hidden bg-white border-t border-gray-100 transition-all duration-300"
+        style={{
+          maxHeight: isMenuOpen ? '80vh' : 0,
+          opacity: isMenuOpen ? 1 : 0,
+          overflowY: isMenuOpen ? 'auto' : 'hidden',
+          visibility: isMenuOpen ? 'visible' : 'hidden',
+        }}
+      >
         <div className="px-4 py-4 space-y-1">
           {NAV_ITEMS.map((item) => (
             <div key={item.label}>
