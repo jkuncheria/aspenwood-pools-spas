@@ -240,7 +240,7 @@ const ReviewsModal: React.FC<{
         <header className="rlgr-modal-header">
           <div className="rlgr-overview-copy">
             <div className="rlgr-google-title"><GoogleWordmark /><strong>Reviews</strong></div>
-            <div className="rlgr-score-row"><strong>{data.place.rating.toFixed(1)}</strong><Stars rating={data.place.rating} size={22} /><span>({data.place.reviewCount})</span></div>
+            <div className="rlgr-score-row">{data.place.rating >= 4.8 && <strong>{data.place.rating.toFixed(1)}</strong>}<Stars rating={data.place.rating} size={22} /><span>({data.place.reviewCount})</span></div>
           </div>
           <a className="rlgr-review-button" href={data.place.writeReviewUrl} target="_blank" rel="noopener noreferrer">Review us on Google</a>
         </header>
@@ -255,7 +255,7 @@ const ReviewsModal: React.FC<{
   );
 };
 
-const GoogleReviewsFeed: React.FC<Props> = ({ data, accent = '#5138ee', initialCount = 7, loadMoreCount = 6, minRating = 4, showSummary = true, className = '' }) => {
+const GoogleReviewsFeed: React.FC<Props> = ({ data, accent = '#5138ee', initialCount = 7, loadMoreCount = 6, minRating = 5, showSummary = true, className = '' }) => {
   const [visibleCount, setVisibleCount] = useState(initialCount);
   const [selectedReviewId, setSelectedReviewId] = useState<string | null>(null);
   const masonryRef = useRef<HTMLDivElement>(null);
@@ -339,7 +339,7 @@ const GoogleReviewsFeed: React.FC<Props> = ({ data, accent = '#5138ee', initialC
       <div className="rlgr-overview">
         <div className="rlgr-overview-copy">
           <div className="rlgr-google-title"><GoogleWordmark /><strong>Reviews</strong></div>
-          <div className="rlgr-score-row"><strong>{data.place.rating.toFixed(1)}</strong><Stars rating={data.place.rating} size={22} /><span>({data.place.reviewCount})</span></div>
+          <div className="rlgr-score-row">{data.place.rating >= 4.8 && <strong>{data.place.rating.toFixed(1)}</strong>}<Stars rating={data.place.rating} size={22} /><span>({data.place.reviewCount})</span></div>
         </div>
         <a className="rlgr-review-button" href={data.place.writeReviewUrl} target="_blank" rel="noopener noreferrer">Review us on Google</a>
       </div>
