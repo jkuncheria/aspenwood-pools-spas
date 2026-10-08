@@ -9,7 +9,6 @@ import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import WhiteGloveService from '../components/WhiteGloveService';
 import CTABanner from '../components/CTABanner';
-import InstagramFeed from '../components/InstagramFeed';
 
 const Home: React.FC = () => {
   return (
@@ -22,11 +21,9 @@ const Home: React.FC = () => {
       <WhiteGloveService />
       <Testimonials />
       <CTABanner />
-      <InstagramFeed />
       {/* <Inspiration /> */}
     </>
   );
 };
 
 export default Home;
-
